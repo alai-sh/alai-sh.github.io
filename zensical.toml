@@ -1,0 +1,40 @@
+# The landing page at alai.sh. The theme settings are alai's (alai-sh/alai's
+# zensical.toml), so the two sites look the same: change both together.
+
+[project]
+site_name = "alai"
+site_description = "A fast package and environment manager for Ansible collections."
+site_url = "https://alai.sh/"
+repo_url = "https://github.com/alai-sh"
+repo_name = "alai-sh"
+copyright = "Copyright &copy; 2026 Jordan Borean"
+
+# Leaves the prompts and output out of what a code block's copy button copies.
+extra_css = ["assets/copy.css"]
+
+[project.theme]
+language = "en"
+features = ["content.code.copy"]
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to system preference"
+
+[project.markdown_extensions]
+admonition = {}
+attr_list = {}
+pymdownx.highlight = {}
+pymdownx.superfences = {}

@@ -1,0 +1,6 @@
+/* The copy button copies a block's text as shown, so leave out the "$ " prompts and the output in console blocks,
+   leaving only the commands to paste. The theme sets data-md-copying on the code while it reads it. */
+.highlight code[data-md-copying] .gp,
+.highlight code[data-md-copying] .go {
+  display: none;
+}
