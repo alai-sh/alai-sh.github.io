@@ -55,8 +55,8 @@ project gets the same collections with `alai sync`.
 | | |
 |---|---|
 | [alai](https://github.com/alai-sh/alai) | The `alai` command: manage a project's collections and run Ansible with them. [Docs](https://docs.alai.sh/) |
-| [alai-index](https://github.com/alai-sh/alai-index) | Build and run your own alai index, as a tree of static files, or mirror a Galaxy server into one. |
-| [alai-doc](https://github.com/alai-sh/alai-doc) | Read plugin and role documentation from a collection in the terminal. |
+| [alai-index](https://github.com/alai-sh/alai-index) | Build and run your own alai index, as a tree of static files, or mirror a Galaxy server into one. [Docs](https://alai.sh/alai-index/) |
+| [alai-doc](https://github.com/alai-sh/alai-doc) | Read plugin and role documentation from a collection in the terminal. [Docs](https://alai.sh/alai-doc/) |
 | [alai-core](https://github.com/alai-sh/alai-core) | The library the others share. Internal, with no stable API. |
 
 Bugs and ideas go in each project's issue tracker on
