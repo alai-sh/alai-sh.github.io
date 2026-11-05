@@ -15,20 +15,28 @@ a fraction of the time `ansible-galaxy` takes.
 ![ansible-galaxy and alai each installing community.general with nothing cached, played side by side: alai finishes and installs it again into another project while ansible-galaxy is still running](https://docs.alai.sh/assets/casts/galaxy-comparison-light.svg#only-light)
 ![ansible-galaxy and alai each installing community.general with nothing cached, played side by side: alai finishes and installs it again into another project while ansible-galaxy is still running](https://docs.alai.sh/assets/casts/galaxy-comparison-dark.svg#only-dark)
 
-!!! warning "Preview"
+!!! note "A word on how alai is made"
 
-    alai is in preview and its interface isn't stable yet. It's written with
-    the help of AI coding tools, with a human arguing over every design
-    decision; [the docs](https://docs.alai.sh/) say more.
+    alai is written with the help of AI coding tools. That doesn't mean a
+    model was handed a prompt and left to get on with it: a human argues
+    over every design decision, the reasoning behind them is written down
+    in the repository, and features are tried by hand against real
+    projects before they land, then tried again when they don't behave.
+    Think of it as pair programming where one of the pair never needs a
+    coffee break.
+
+    I respect your decision if you'd rather not use software built this way,
+    and it seemed better to say so outright rather than after you've read
+    the docs or started using the software.
 
 ## Getting started
 
-Install alai with [uv](https://docs.astral.sh/uv/getting-started/installation/),
-which puts the `alai` command on your `PATH`:
+Install alai from [PyPI](https://pypi.org/project/alai-sh/) with
+[uv](https://docs.astral.sh/uv/getting-started/installation/), which puts the
+`alai` command on your `PATH`:
 
-<!-- At the first PyPI release: `uv tool install alai-sh`, as in alai's docs. -->
 ```console
-$ uv tool install https://github.com/alai-sh/alai/archive/refs/heads/main.tar.gz
+$ uv tool install alai-sh
 ```
 
 An `alai.toml` marks the project, so create one beside your playbooks, add the
@@ -51,6 +59,15 @@ project gets the same collections with `alai sync`.
 **[Read the documentation →](https://docs.alai.sh/)**
 
 ## Projects
+
+alai, alai-doc and alai-index are released on PyPI, and each installs as its
+own command with uv:
+
+```console
+$ uv tool install alai-sh
+$ uv tool install alai-doc
+$ uv tool install alai-index
+```
 
 | | |
 |---|---|
