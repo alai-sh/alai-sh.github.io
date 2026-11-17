@@ -3,7 +3,7 @@
 name = "alai-sh-github-io"
 version = "0"
 requires-python = ">=3.11"
-dependencies = ["zensical >= 0.0.71"]
+dependencies = ["zensical>=0.1.0"]
 
 [tool.uv]
 package = false
